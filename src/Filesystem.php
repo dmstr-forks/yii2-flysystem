@@ -129,10 +129,11 @@ abstract class Filesystem extends Component
     }
 
     /**
-     * Returns the League\Flysystem\Filesystem file system object
      * @return \League\Flysystem\FilesystemInterface
      */
-    public function getNativeFilesystem(){
+    public function getFilesystem()
+    {
         return $this->filesystem;
     }
+    
 }
